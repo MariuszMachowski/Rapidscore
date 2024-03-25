@@ -75,7 +75,7 @@ function App() {
   }, [isSmallScreen]);
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Header />
         <Navigation sportsList={sportsList} isDarkTheme={isDarkTheme} />
