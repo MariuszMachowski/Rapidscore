@@ -1,0 +1,129 @@
+.footer-wrapper {
+  display: flex;
+  height: 10vh;
+  background-color: var(--primary-color);
+  justify-content: space-between;
+}
+.footer-info {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-left: 10vw;
+}
+.footer-wrapper p {
+  margin: 0;
+  padding: 0;
+  margin-left: 40px;
+  color: var(--paragraph-text-color);
+  font-size: 13px;
+}
+.footer-logo {
+  height: 100%;
+  transform: scale(0.6);
+}
+.social-wrapper {
+  display: flex;
+  margin-right: 19vw;
+  align-items: center;
+}
+.social-wrapper p {
+  margin-right: 25px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.social-wrapper svg {
+  margin-right: 25px;
+  cursor: pointer;
+}
+.social-wrapper svg:hover {
+  fill: var(--btn-active-color);
+}
+@media screen and (max-width: 1024px) {
+  .footer-wrapper {
+    height: 8vh;
+  }
+  .footer-info {
+    margin-left: 1vw;
+  }
+  .social-wrapper {
+    margin-right: 3vw;
+  }
+  .social-wrapper p {
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .footer-wrapper {
+    height: 10vh;
+  }
+  .footer-info {
+    margin-left: 1vw;
+  }
+  .footer-info img {
+    width: 90px;
+    height: auto;
+    transform: scale(1);
+    margin: 0 15px;
+  }
+  .footer-info p {
+    font-size: 10px;
+    margin-left: 0px;
+  }
+  .social-wrapper {
+    margin-right: 3vw;
+  }
+  .social-wrapper p {
+    white-space: nowrap;
+    font-size: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  .social-wrapper svg {
+    margin-right: 1vw;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .footer-info img {
+    width: 70px;
+    margin: 0 15px;
+  }
+  .footer-info p {
+    font-size: 7px;
+  }
+  .social-wrapper svg {
+    width: 23px;
+    height: 23px;
+  }
+}
+@media screen and (orientation: landscape) and (max-width: 932px) {
+  .footer-info img {
+    transform: scale(0.7);
+  }
+  .footer-wrapper {
+    height: 12vh;
+  }
+  .footer-info p,
+  .social-wrapper p {
+    font-size: 11px;
+  }
+  .social-wrapper svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen and (orientation: landscape) and (max-width: 740px) {
+  .footer-wrapper {
+    height: 12vh;
+  }
+  .footer-info p,
+  .social-wrapper p {
+    font-size: 8px;
+  }
+  .social-wrapper svg {
+    width: 17px;
+    height: 17px;
+  }
+}

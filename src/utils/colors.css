@@ -1,0 +1,18 @@
+:root {
+  --primary-color: #000609;
+  --secondary-color: #eae6e6;
+  --btn-hover-color: #222;
+  --btn-active-color: #ff0046;
+  --btn-first-color: #555e61;
+  --paragraph-text-color: #fff;
+  --navigation-background-color: #f9f6f6;
+  --sub-navigation-btn-hover: #d1cccc;
+  --navigation-border-color: #c0c4c4;
+  --results-widget-primary-color: #fff;
+  --results-widget-secondary-color: #e9ecef;
+  --results-widget-third-color: #000;
+  --results-widget-text-color: #000;
+  --results-widget-border-color: #e9ecef;
+  --top-leagues-color: #111;
+  --sub-navigation-active-color: #f9f6f6;
+}

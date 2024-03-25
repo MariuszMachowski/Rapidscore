@@ -1,0 +1,191 @@
+.top-leagues-nav {
+  width: 190px;
+  margin-left: 140px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.top-leagues-nav ul {
+  list-style-type: none;
+}
+.top-leagues-nav ul li {
+  display: flex;
+  margin: 6px 0;
+  padding: 4px 5px;
+  font-size: 13px;
+  line-height: 18px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.top-leagues-nav ul li:hover {
+  background-color: var(--sub-navigation-btn-hover);
+}
+.top-leagues-nav ul li a {
+  width: 100%;
+  margin: 0;
+  margin-left: 5px;
+  font-size: 12px;
+  color: var(--top-leagues-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.top-leagues-nav ul li img {
+  object-fit: contain;
+  align-self: flex-start;
+}
+.league-info-wrapper {
+  flex-basis: 45%;
+  padding: 15px 10px;
+  background-color: var(--results-widget-primary-color);
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.top-leagues-title {
+  margin: 0;
+  margin-left: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--top-leagues-color);
+}
+.active-li {
+  background-color: var(--sub-navigation-active-color);
+}
+.league-info-wrapper td {
+  background-color: var(--results-widget-primary-color);
+  color: var(--results-widget-text-color);
+  border-bottom-color: var(--results-widget-border-color);
+  padding-top: 6px;
+}
+.league-info-wrapper .wg_header {
+  background-color: var(--results-widget-secondary-color);
+  color: var(--results-widget-third-color);
+}
+
+@media screen and (max-width: 1024px) {
+  .top-leagues-nav {
+    width: 190px;
+    margin-left: 10px;
+  }
+  .top-leagues-title {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .top-leagues-nav ul {
+    padding-left: 20px;
+  }
+  .top-leagues-nav ul li a {
+    width: 100%;
+    margin: 0;
+    margin-left: 5px;
+    font-size: 16px;
+  }
+  .league-info-wrapper {
+    flex-basis: 65%;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .mobile-top-leagues-nav {
+    position: relative;
+    width: 100%;
+    margin: 0px;
+  }
+  .mobile-top-leagues-nav .top-leagues-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 12px;
+  }
+  .mobile-top-leagues-nav .top-leagues-title p {
+    font-size: 16px;
+    margin: 5px 0 5px 10px;
+  }
+  .mobile-top-leagues-nav .top-leagues-title button {
+    margin-right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  .mobile-top-leagues-nav .top-leagues-title button .leagues-arrow {
+    fill: var(--top-leagues-color);
+    margin-top: 3px;
+  }
+  .mobile-top-leagues-nav ul {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    background-color: var(--secondary-color);
+    z-index: 2;
+  }
+  .mobile-top-leagues-nav ul li {
+    max-width: 50%;
+  }
+  .mobile-top-leagues-nav ul li a {
+    width: auto;
+    font-size: 14px;
+  }
+  .league-info-wrapper {
+    margin-top: 0px;
+  }
+  .leagues-arrow-rotate {
+    transform: rotate(180deg);
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .mobile-top-leagues-nav .top-leagues-title p {
+    font-size: 12px;
+    margin-left: 12px;
+  }
+  .mobile-top-leagues-nav ul {
+    top: 12px;
+  }
+  .mobile-top-leagues-nav ul li a {
+    font-size: 10px;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 1024px) {
+  .top-leagues-title {
+    font-size: 16px;
+    margin-left: 26px;
+  }
+  .top-leagues-nav ul li a {
+    font-size: 14px;
+  }
+}
+@media screen and (orientation: landscape) and (max-width: 932px) {
+  .top-leagues-title {
+    font-size: 13px;
+    margin-left: 26px;
+  }
+  .top-leagues-nav ul li a {
+    font-size: 11px;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 740px) {
+  .top-leagues-title {
+    font-size: 14px;
+    margin-left: 26px;
+  }
+  .top-leagues-nav ul li a {
+    font-size: 11px;
+  }
+}
+@media screen and (orientation: landscape) and (max-width: 640px) {
+  .top-leagues-nav {
+    width: 140px;
+  }
+  .league-info-wrapper,
+  .sports-results-container {
+    flex-basis: 70%;
+  }
+  ._navLink {
+    margin-right: 0px;
+  }
+}
